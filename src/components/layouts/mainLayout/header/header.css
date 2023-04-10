@@ -1,0 +1,17 @@
+/* header {
+    height: 70px;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: 0px;
+  }
+  Ư
+header .header-fixed {
+    height: 70px;
+    background-color: rgb(19, 19, 19);
+    transition: all 0.8s;
+  } */
+  /* .main-color {
+    color: var(--main-color);
+} */

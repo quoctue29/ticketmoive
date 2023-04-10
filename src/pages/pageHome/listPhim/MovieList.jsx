@@ -12,7 +12,7 @@ function MovieList(props) {
   const settings = {
     infinite: true,
     speed: 400,
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 3,
     initialSlide: 0,
     rows: 1,

@@ -14,13 +14,26 @@ export default function Header() {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <nav className="flex sticky top-0 items-center justify-between flex-wrap bg-black py-2 lg:px-12 shadow border-solid border-t-2 border-white-700">
+    <nav className="flex sticky top-0 w-full z-30 items-center justify-between flex-wrap bg-black py-2 lg:px-12 shadow border-solid border-t-2 border-white-700">
       <div className="container">
-        <div className="justify-between lg:items-center lg:flex">
+        <div className="flex justify-between lg:items-center lg:flex">
           <div className="flex items-center flex-shrink-0 text-gray-800 mr-16">
             <div className="flex items-center justify-between lg:block">
-              <NavLink to="home">
-                <img classname="w-15 " src="" />
+              <NavLink
+                classname="flex items-center space-x-3 lg:pr-16 pr-6"
+                to="home"
+              >
+                <svg
+                  className="h-6 w-30"
+                  aria-hidden="true"
+                  viewBox="0 0 160 24"
+                  fill="none"
+                >
+                  <path
+                    d="M18.724 1.714c-4.538 0-7.376 2.286-8.51 6.857 1.702-2.285 3.687-3.143 5.957-2.57 1.296.325 2.22 1.271 3.245 2.318 1.668 1.706 3.6 3.681 7.819 3.681 4.539 0 7.376-2.286 8.51-6.857-1.701 2.286-3.687 3.143-5.957 2.571-1.294-.325-2.22-1.272-3.245-2.32-1.668-1.705-3.6-3.68-7.819-3.68zM10.214 12c-4.539 0-7.376 2.286-8.51 6.857 1.701-2.286 3.687-3.143 5.957-2.571 1.294.325 2.22 1.272 3.245 2.32 1.668 1.705 3.6 3.68 7.818 3.68 4.54 0 7.377-2.286 8.511-6.857-1.702 2.286-3.688 3.143-5.957 2.571-1.295-.326-2.22-1.272-3.245-2.32-1.669-1.705-3.6-3.68-7.82-3.68z"
+                    className="fill-gray-300"
+                  ></path>
+                </svg>
               </NavLink>
               <div className="lg:hidden">
                 <button

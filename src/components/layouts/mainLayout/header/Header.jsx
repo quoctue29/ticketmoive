@@ -37,7 +37,7 @@ export default function Header() {
               </NavLink>
               <div className="lg:hidden">
                 <button
-                  className="p-2 text-black rounded-md outline-none border"
+                  className="p-2 text-white rounded-md outline-none border"
                   onClick={() => setNavbar(!navbar)}
                 >
                   {navbar ? <AiOutlineClose /> : <AiOutlineMenu />}

@@ -61,9 +61,12 @@ export default function PhimDetail() {
                 </span>
               </p>
               <p className="text-lime-500 ">
-               Mô tả:
-               <span className="text-gray-300 text-base"> {lichChieuPhim.moTa}</span>
-               </p>
+                Mô tả:
+                <span className="text-gray-300 text-base">
+                  {" "}
+                  {lichChieuPhim.moTa}
+                </span>
+              </p>
               <a
                 href={lichChieuPhim.trailer}
                 target="blank"
@@ -122,12 +125,18 @@ export default function PhimDetail() {
                                 {heThong.cumRapChieu.map((cumRap, i) => (
                                   <div key={i} className="border-b py-2">
                                     <div className="flex">
-                                      <img style={{width:55, height: 55}}
+                                      <img
+                                        style={{ width: 55, height: 55 }}
                                         src={cumRap.hinhAnh}
                                         alt=""
                                         className="w-20"
                                       />
-                                     <p className="text-green-800 ms-3" style={{marginLeft: 2}}>{cumRap.diaChi}</p>
+                                      <p
+                                        className="text-green-800 ms-3"
+                                        style={{ marginLeft: 2 }}
+                                      >
+                                        {cumRap.diaChi}
+                                      </p>
                                     </div>
                                     <div className="grid grid-cols-2 gap-1 mt-2 justify-items-start">
                                       {cumRap.lichChieuPhim
@@ -143,21 +152,21 @@ export default function PhimDetail() {
                                             }}
                                             key={i}
                                             className="  text-start px-3 py-1 rounded-md font-medium hover:bg-slate-200 transition duration-300"
-                                                style={{
-                                                  backgroundColor: "#DCD7C9",
-                                                }}
+                                            style={{
+                                              backgroundColor: "#DCD7C9",
+                                            }}
                                           >
-                                             <span className="">
-                                                  {moment(
-                                                    lichChieu.ngayChieuGioChieu
-                                                  ).format("DD-MM-YYYY")}{" "}
-                                                  ~
-                                                </span>
-                                                <span className="text-red-500">
-                                                  {moment(
-                                                    lichChieu.ngayChieuGioChieu
-                                                  ).format("hh:mm")}
-                                                </span>
+                                            <span className="">
+                                              {moment(
+                                                lichChieu.ngayChieuGioChieu
+                                              ).format("DD-MM-YYYY")}{" "}
+                                              ~
+                                            </span>
+                                            <span className="text-red-500">
+                                              {moment(
+                                                lichChieu.ngayChieuGioChieu
+                                              ).format("hh:mm")}
+                                            </span>
                                           </button>
                                         ))}
                                     </div>
